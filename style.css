@@ -135,4 +135,20 @@ nav li a.active {
 
 /* Indeling en opmaak voor subpagina */
 
-/* verzin deze zelf... */
+
+
+@keyframes springen { /* definieer animatie */
+  0%  {top: 0px; left: 0px}
+  25% {top: -100px; left: 0px}
+  50% {top: -100px; left: 100px}
+  75% {top: 0px; left: 100px}
+  100%{top: 0px; left: 0px};
+}
+.rood { 
+  position:relative;
+  animation-name: springen; /* zet hier dezelfde naam als die je achter @keyframes gebruikt */
+  animation-duration: 1s; /* doe 2 seconde over animatie */
+  animation-iteration-count: infinite; /* heraal oneindig keer */       
+  .rood{
+    width: 500px;height: 500px ;
+  }
